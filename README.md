@@ -11,3 +11,9 @@
 ## Disable minimize on window shake
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
 "DisallowShaking"=dword:00000001
+
+## Docker and Git autocompletion
+scoop install pshazz
+Install-Module DockerCompletion -Scope CurrentUser
+Import-Module DockerCompletion
+notepad $PROFILE; add line: Import-Module DockerCompletion
