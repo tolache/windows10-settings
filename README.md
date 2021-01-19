@@ -12,8 +12,12 @@
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Advanced] <br/>
 "DisallowShaking"=dword:00000001
 
-## Docker and Git autocompletion
+## Autocompletion in PowerShell
+### Git
+Set-ExecutionPolicy RemoteSigned -scope CurrentUser <br/>
+Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
 scoop install pshazz <br/>
+### Docker
 Install-Module DockerCompletion -Scope CurrentUser <br/>
 Import-Module DockerCompletion <br/>
 notepad $PROFILE; add line: Import-Module DockerCompletion <br/>
