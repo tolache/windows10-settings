@@ -15,7 +15,7 @@
 ## Autocompletion in PowerShell
 ### Git
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser <br/>
-Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh') <br/>
 scoop install pshazz <br/>
 ### Docker
 Install-Module DockerCompletion -Scope CurrentUser <br/>
