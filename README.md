@@ -17,10 +17,10 @@
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser <br/>
 PowerShellGet\Install-Module posh-git -Scope CurrentUser -AllowPrerelease -Force <br/>
 Import-Module posh-git <br/>
-notepad $PROFILE; add line: Import-Module DockerCompletion <br/>
+echo "Import-Module DockerCompletion" >> $PROFILE <br/>
 Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh') <br/>
 scoop install pshazz <br/>
 ### Docker
 Install-Module DockerCompletion -Scope CurrentUser <br/>
 Import-Module DockerCompletion <br/>
-notepad $PROFILE; add line: Import-Module DockerCompletion <br/>
+echo "Import-Module DockerCompletion" >> $PROFILE <br/>
