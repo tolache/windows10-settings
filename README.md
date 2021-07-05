@@ -24,3 +24,12 @@ scoop install pshazz <br/>
 Install-Module DockerCompletion -Scope CurrentUser <br/>
 Import-Module DockerCompletion <br/>
 echo "Import-Module DockerCompletion" >> $PROFILE <br/>
+
+## Disable Mail and Home keyboard keys
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AppKey\7] <br/>
+@="" </br>
+"ShellExecute"="AppKey_7_(browser_home_key).vbs" <br/>
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AppKey\15] <br/>
+@="" </br>
+"ShellExecute"="AppKey_15_(mail_key).vbs" </br>
+
