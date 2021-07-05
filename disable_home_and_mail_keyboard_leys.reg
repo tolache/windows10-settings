@@ -1,0 +1,9 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AppKey\7]
+@=""
+"ShellExecute"="AppKey_7_(browser_home_key).vbs"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\AppKey\15]
+@=""
+"ShellExecute"="AppKey_15_(mail_key).vbs"
